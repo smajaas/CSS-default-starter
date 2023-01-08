@@ -122,12 +122,12 @@ ul {
   list-style-type: none;
   padding: 0;
 }
-.container {
+/* .container {
   width: 40vw;
   border: 5px solid var(--primary-500);
   border-radius: var(--borderRadius);
   max-width: var(--max-width);
-}
+} */
 .img {
   width: 100%;
   display: block;
