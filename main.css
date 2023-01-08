@@ -18,9 +18,28 @@ html {
 
 :root {
   /* colors */
+  --primary-100: #e2e0ff;
+  --primary-200: #c1beff;
+  --primary-300: ##a29dff;
+  --primary-400: ##837dff;
   --primary-500: #645cff;
+  --primary-600: #504acc;
+  --primary-700: #3c3799;
+  --primary-800: #282566;
+  --primary-900: #141233;
   /* primary */
   /* grey */
+  --grey-50: #f8fafc;
+  --grey-100: #f1f5f9;
+  --grey-200: #e2e8f0;
+  --grey-300: #cbd5e1;
+  --grey-400: #94a3b8;
+  --grey-500: #64748b;
+  --grey-600: #475569;
+  --grey-700: #334155;
+  --grey-800: #1e293b;
+  --grey-900: #0f172a;
+
   --black: #222;
   --white: #fff;
   --red-light: #f8d7da;
@@ -33,14 +52,28 @@ html {
   --bodyFont: 'Karla', sans-serif;
   --smallText: 0.7rem;
   /* rest of the vars */
+  --backgroundColor: var(--grey-50);
+  --textColor: var(--grey-900);
+  --borderRadius: 0.25rem;
+  --letterSpacing: 1px;
+  --transition: 0.3s ease-in-out all;
+  --max-width: 1120px;
+  --fixed-width: 600px;
+
+  /* box shadow */
+  --shadow-1: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-2: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-3: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-4: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
 
 body {
-  background: white;
+  background: var(--backgroundColor);
   font-family: var(--bodyFont);
   font-weight: 400;
   line-height: 1.75;
-  color: #000000;
+  color: var(--textColor);
 }
 
 p {
@@ -94,4 +127,15 @@ a {
 ul {
   list-style-type: none;
   padding: 0;
+}
+.container {
+  width: 40vw;
+  border: 5px solid var(--primary-500);
+  border-radius: var(--borderRadius);
+  max-width: var(--max-width);
+}
+.img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
 }
